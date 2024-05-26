@@ -4,16 +4,16 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-chrono = { version = "0.4.19", features = ["serde"] }
-lazy_static = "1.4.0"
-tokio = { version = "1.37.0", features = ["full"] }
-dotenv = "0.15.0"
-tracing = "0.1.40"
-tracing-subscriber = "0.3.18"
-serde_json = "1.0.64"
-serde = { version = "1.0.125", features = ["derive"] }
-reqwest = { version = "0.12.4", default-features = false, features = [
+chrono = { version = "*", features = ["serde"] }
+lazy_static = "*"
+tokio = { version = "*", features = ["full"] }
+dotenv = "*"
+tracing = "*"
+tracing-subscriber = "*"
+serde_json = "*"
+serde = { version = "*", features = ["derive"] }
+reqwest = { version = "*", default-features = false, features = [
     "json",
     "rustls-tls",
 ] }
-anyhow = "1.0.83"
+anyhow = "*"
